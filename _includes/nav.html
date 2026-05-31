@@ -1,0 +1,8 @@
+<nav class="topnav">
+  <a class="site-name" href="{{ '/' | relative_url }}">Siry シリ</a>
+  <ul class="nav-items">
+    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+    <li><a href="{{ '/work/' | relative_url }}" {% if page.url contains 'work' %}class="active"{% endif %}>Work</a></li>
+    <li><a href="{{ '/contact/' | relative_url }}" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a></li>
+  </ul>
+</nav>
